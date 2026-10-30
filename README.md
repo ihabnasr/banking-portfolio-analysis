@@ -1,42 +1,49 @@
-# 🏦 Retail Banking Portfolio Analysis
+# 🏦 Banking & Transaction Analytics
 
-> An exploratory data analysis (EDA) of multi-table retail banking data using Python and Pandas to uncover transaction trends, branch performance, and account behaviors.
+A hands-on exploratory data analysis (EDA) of retail banking transaction patterns, customer account velocity, and branch-level throughput using Python and Pandas.
 
 ---
 
 ## 📌 Project Overview
-As data-driven decision-making becomes core to modern fintech and banking, understanding customer transaction behavior and credit risk is vital. This project integrates multiple relational tables (customers, accounts, transactions, loans, and branches) to analyze cash flow patterns, identify key customer segments, and track multi-year financial trends.
+In modern retail banking and fintech, understanding transactional flow and account behaviors is essential for risk management, liquidity planning, and customer retention. 
+
+This project explores a multi-table relational dataset combining customer demographics, account records, transactional logs, and branch metadata. The analysis focuses on understanding daily cash flow dynamics, identifying account activity patterns, and evaluating branch transaction loads.
+
+*(Note: While the core dataset includes loan tables, this initial phase focuses exclusively on transaction, customer, account, and branch mechanics.)*
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+## 🛠️ Tech Stack & Tools
 * **Language:** Python 3.x
-* **Core Libraries:** Pandas, NumPy (Data Cleaning, Data Validation & Transformation)
-* **Visualization:** Matplotlib, Seaborn (Data Storytelling & Trend Analysis)
-* **Environment:** Jupyter Notebook / Google Colab
+* **Data Processing & Cleaning:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **Environment:** Google Colab
 
 ---
 
 ## 📊 Key Findings & Insights
-1. **Transaction Volume Trends:** Peak transaction activities occur heavily on specific days of the week, highlighting core customer spending windows.
-2. **Account & Loan Distribution:** Analyzing deposit inflows vs. withdrawals helped segment active retail accounts from dormant ones.
-3. **Branch Performance:** Evaluated transactional throughput across branch nodes to identify high-volume financial hubs.
+
+* **Transaction Velocity & Peak Windows:** Transaction volumes show distinct clustering around specific days of the week and hours of the day, reflecting core retail spending habits and high-throughput liquidity windows.
+* **Account Activity Segregation:** Joining customer accounts with transaction logs revealed a clear divide between highly active core accounts driving regular deposit/withdrawal velocity and a cluster of dormant or low-activity accounts.
+* **Branch-Level Load Imbalance:** Transactional volume across physical branches is heavily skewed—a small subset of key regional branches processes a disproportionately large share of total daily transactions, signaling potential operational bottlenecks.
 
 ---
+
 ## 💡 Strategic Recommendations
-Based on the data insights, here are actionable recommendations for retail banking leadership:
-* **Targeted Re-Engagement Campaigns:** Implement automated email or in-app notifications for accounts showing prolonged inactivity to reduce churn risk.
-* **Branch Resource Optimization:** Reallocate staff and technical resources toward the top-performing high-volume branches to reduce transaction bottlenecks.
-* **Credit Risk Monitoring:** Closely monitor loan repayment patterns associated with specific customer demographics identified in the multi-table join to proactively manage risk.
+
+1. **Targeted Account Re-Engagement:** Deploy automated, data-driven notifications and tailored incentives to re-engage accounts exhibiting prolonged inactivity, reducing churn risk and reactivating dormant balances.
+2. **Branch Resource Optimization:** Reallocate customer support staff and technical infrastructure toward top-volume branch hubs to shorten wait times and eliminate transaction delays during peak windows.
+3. **Liquidity & Cash Management:** Utilize daily transaction demand curves to optimize ATM replenishment schedules and branch cash reserve limits, ensuring cash flow matches real-world customer usage patterns.
 
 ---
 
 ## 📁 Repository Structure
+
 ```text
 banking-portfolio-analysis/
 │
 ├── notebooks/
-│   └── banking_analysis.ipynb     # Main Python analysis notebook
+│   └── Transaction_Risk_Analytics.ipynb   # Main Python analysis notebook
 ├── images/
-│   └── Fintech Project ERD 2026-10-04.jpeg     # ERD For Raw Dataset
-└── README.md                      # Project documentation
+│   └── Fintech Project ERD 2026-10-04.jpeg  # ERD For Raw Relational Schema
+└── README.md                                # Project documentation
